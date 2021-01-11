@@ -11,7 +11,7 @@ namespace JarnoMaes_Interfaces
     {
         static void Main(string[] args)
         {
-            Transaction tra1 = new Transaction("0001","2021.01.11",110);
+            Transaction tra1 = new Transaction("0001","2021.01.11",200);
             tra1.ShowTransaction();           
             tra1.GetAmount();
             Console.WriteLine("\n---------Transaction Nr 2----------");

@@ -22,15 +22,12 @@ namespace JarnoMaes_Interfaces.Models
         }
 
         public double GetAmount()
-        {
-            double FullAmount;
+        { 
             if (_Amount > 100)
             {
-                
-                _Commission = 100 / 100 * 0.5;
-                Console.WriteLine($"You will be charged extra commission of {_Commission}% on your {_Amount}Euro");   
-                FullAmount = _Amount - _Commission;
-                return FullAmount;
+                _Commission = _Amount / 100 * 0.5;
+                Console.WriteLine($"You will be charged extra commission of {_Commission}Euro on your {_Amount}Euro");                
+                return _Amount;
             }
             else
             {
